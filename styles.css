@@ -49,6 +49,35 @@ nav ul li :hover{
     align-items: center;
 }
 .overview-hero .container img{
+    height: 120px;
+    width: "auto";
     float: left;
     padding: 20px;
+}
+
+.learn-about .container h2{
+    font-size: 24px;
+    color: #48BB78;
+}
+.learn-about .container .cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;    
+}
+.card >img{
+    height: 190px;
+    width: "auto";
+    padding: 10px;
+}
+.card h3{
+    color: #48BB78;
+    font-size: 21px;
+}
+.learn-about .container .card{
+    margin: 20px;
+    border: 2px solid;
+    padding: 10px;
+    border-color: #E2E8F0;
+    box-shadow: 5px 10px  #4b6d56;
+
 }
