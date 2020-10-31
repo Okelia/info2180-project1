@@ -36,8 +36,19 @@ nav ul{
 nav ul li{
     float: right;
     padding: 10px;
+    color: #6b7280;
+}
+nav ul li :hover{
+    color: #5A67D8;
+    cursor: pointer;
 }
 .overview-hero .container{
     grid-row: 2;
-    background-color: brown;
+    display: flex;
+    background-color: #E2E8F0    ;
+    align-items: center;
+}
+.overview-hero .container img{
+    float: left;
+    padding: 20px;
 }
