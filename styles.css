@@ -134,3 +134,24 @@ nav ul li :hover{
     display: grid;
     grid-row: 5;
 }
+/*######################################*/
+.newsletter{
+    display: flex;
+    background-color: #48BB78;
+    color: #ffffff;
+    align-content: center;
+    padding: 25px;
+}
+.newsletter .btn{
+    background-color: #5A67D8;
+}
+.newsletter form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*###############################*/
+footer{
+    background-color: #4A5568;
+    color: #ffffff;
+}
