@@ -1,19 +1,15 @@
 document.addEventListener("DOMContentLoaded", ()=> {
-    let e = document.getElementsByClassName("btn")
-    let enterdata =  document.getElementById("email")
-      
-    e.addEventListener("click", emailFun(enterdata))
-
-    function emailFun(data){
-        let mail = data.email.value;
-        var messageElement = document.querySelector('.message');
-        if (mail){
-            messageElement.innerHTML = "Thank you! Your email address <${mail}> has been added to your mailing list";
-            return false;
+    var message = document.getElementById("email");
+    var btn = document.getElementsByClassName("btn")[1].onclick=function(e){
+        var input= message.value;
+        if (input == ""){
+            document.getElementsByClassName("message")[0].innerHTML=" Please enter a valid email address";
         }
-        else{ 
-            messageElement.innerHTML = "Please enter a valid email address ";
-            return false;
+    
+        else{
+            document.getElementsByClassName("message")[0].innerHTML=" Thank you! Your email address "+input+" has been added to our mailing list";
         }
+        e.preventDefault();
     }
+    btn.addEventListener("click")
 })
