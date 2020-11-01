@@ -12,6 +12,9 @@ body {
     max-width: 960px;
     width: 100%;
 }
+:any-link{
+    text-decoration: none;
+}
 header {
     background-color: #ffffff;
     font-size: 18px;
@@ -30,8 +33,7 @@ nav ul{
     list-style-type: none;
     overflow: hidden;
     display: flex;
-    float: right;
-    
+    float: right; 
 }
 nav ul li{
     float: right;
@@ -42,6 +44,9 @@ nav ul li :hover{
     color: #5A67D8;
     cursor: pointer;
 }
+/*#######################################################
+                 Hero overview
+#######################################################*/
 .overview-hero {
     grid-row: 2;
     display: flex;
@@ -82,6 +87,9 @@ nav ul li :hover{
     border-color: #E2E8F0;
     box-shadow: 5px 10px  #4b6d56;
 }
+/*###############################################
+            COVID-19 Testing Programme
+  ############################################### */
 .testing {
     background-color: #4A5568;
     color: #ffffff;
@@ -113,12 +121,15 @@ nav ul li :hover{
     text-align: center;
     transition: all 0.3s ease-in-out;
 }
-/*##############################################################*/
+/*##############################################################
+         Recent Storeies
+##############################################################*/
 .stories h2{
     color: #5A67D8;
 }
-.stories a:link{
-    color: #5A67D8;
+.article-body p a{
+    color:#5A67D8;
+    text-decoration: none;
 }
 .stories img{
     height: 250px;
@@ -134,24 +145,32 @@ nav ul li :hover{
     display: grid;
     grid-row: 5;
 }
-/*######################################*/
+/*######################################
+            Newsletter
+ ######################################*/
 .newsletter{
     display: flex;
     background-color: #48BB78;
     color: #ffffff;
     align-content: center;
+    text-align: center;
     padding: 25px;
 }
 .newsletter .btn{
     background-color: #5A67D8;
+    margin-left: 10px;
 }
 .newsletter form{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-content: center;
+    justify-content: center;
 }
-/*###############################*/
+/*#########################################
+                  Footer
+###########################################*/
 footer{
     background-color: #4A5568;
     color: #ffffff;
+    padding: 10px;
+    margin-top: 15px;
 }
